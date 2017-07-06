@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>NEU Customizer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="img/favico.ico">
+
+        <!-- Bootstrap + Bootstrap responsive  -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+        <!-- Font Awesome 3.0 -->
+        <link href="css/font-awesome.css" rel="stylesheet">
+
+
+        <!-- Annimate -->
+        <link href="css/animate.css" rel="stylesheet">
+
+        <!-- app Style -->
+        <link  href="css/app.css" rel="stylesheet">
+        <!-- app Responsive Style -->
+        <link href="css/jquery-ui-1.8.17.custom.css" rel="stylesheet">
+
+        <!-- Roboto Google font-->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Raleway|Open+Sans' rel='stylesheet' type='text/css'>
+
+
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+        <!-- google font Loader API -->
+
+        <!-- color picker Style -->
+        <link href="css/pick-a-color-1.1.7.min.css" rel="stylesheet">
+
+        <!-- Modernizr-->
+        <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+
+        <!-- HTML5 shim,Responsive design, canvas, fontawesome for IE6-8 support -->
+        <!--[if lt IE 9]>
+            <script src="js/respond.js"></script>
+            <script src="js/excanvas.js"></script>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <link href="css/font-awesome-ie7.min.css" rel="stylesheet">
+        <![endif]-->
+
+        <!-- Filereader Fix for IE6-IE9 support -->
+        <!--
+        [if lt IE 10]>
+            <script src="js/dropfileFix.js"></script>
+
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <!-- header -->
+            <div class="well header">
+
+                <h1>NEU Customizer</h1>
+
+            </div>
+            <!-- /. header -->
+            <!-- Content -->
+            <div class="row-fluid content">
+                <!-- ******** ******* ******* ***** Column #2  ******** ******* ******* ***** -->
+                <!-- span6 : using twitter bootstrap grid system-->
+                <div class="span6">
+                    <!-- designContainer  - printable section -->
+                    <div class="designContainer" id="printable">
+                        <div class="flipper">
+                            <div class="front face">
+	                            <div id='imagesContainer'></div>
+	                            <!-- Text container  - class ='no-delete' we can't delete it (the originale text) -->
+	                                <!-- icon clickable to remove text -  -->
+	                                
+	                                <!-- icon clickable to Edit text (font size, color, font) -->
+	                            </div><!--  /.text-->
+	                            <img id='Tshirtsrc' src="img/t-shirts/woolly0.jpg" alt="Tshirt">
+                            </div>
+                            <div class="back face">
+                                <!-- back content -->
+                                <div id='backImagesContainer'></div>
+                                <img id='backTshirtsrc' src="img/t-shirts/woolly0.jpg" alt="Tshirt">
+                              <div class='text t designtext1 no-delete'>
+                              <p></p>
+                            </div>
+                            <div class="controls" style="height: 100%;">
+
+                            </div>
+                        </div>
+                            <!-- Potential Colors Positioning -->
+                            <ul style="width: 45%; position: absolute; bottom: 0;z-index: 3; margin-left: 35%;" class='tshirts unstyled clearfix'>
+                                <li style="border: none;">
+                                    <!--<a href="#">
+                                        <img src="img/t-shirts/woolly0.jpg" alt="">
+                                    </a>-->
+                                     <input type="image" style="width: 40px; border-radius: 50%;" src="img/white.png" id="thumbnail-white" />
+                                </li>
+                                <li style="border: none;">
+                                    <!--<a href="#">
+                                        <img src="img/t-shirts/woolly1.jpg" alt="">
+                                    </a>-->
+                                    <input type="image" style="width: 40px; border-radius: 50%;" src="img/olive.png" id="thumbnail-olive" />
+                                </li>
+                                <li style="border: none;">
+                                    <!--<a href="#">
+                                        <img src="img/t-shirts/woolly2.jpg" alt="">
+                                    </a>-->
+                                    <input type="image" style="width: 40px; border-radius: 50%;" src="img/navy.png" id="thumbnail-navy" />
+                                </li>
+
+                            </ul>
+                            <!-- End Potential Colors Positioning -->
+
+                    </div>
+
+                    <hr>
+
+
+
+                </div> <!-- span6 -->
+
+                <!-- ******** ******* ******* ***** Column #3 ******** ******* ******* ***** -->
+
+                <div class="span4">
+                    <!-- widget container -->
+                    <div class="widget">
+                        <!-- widget container -->
+                        <div class="widget-header">
+                            <i class="icon-star"></i>
+                            <h3>Styling Options</h3>
+                        </div> <!-- /widget-header -->
+                        <!-- widget content -->
+                        <div class="widget-content">
+
+                            <!--<h5><i class="icon-picture"></i> Add image</h5>-->
+                            <!-- inout to add images and shapes to the T-shirt -->
+                            <!--<input type='file' id="imgInp" class='input-medium' name="file" />-->
+
+
+                            <!--<h5><i class="icon-tags"></i> Color</h5>-->
+                            <!-- Woolly colors -->
+                            <!--<ul class='tshirts unstyled clearfix'>
+                                <li style="border: none;">
+                                     <input type="image" style="width: 40px; border-radius: 50%;" src="img/white.png" id="thumbnail-white" />
+                                </li>
+                                <li style="border: none;">
+                                    <input type="image" style="width: 40px; border-radius: 50%;" src="img/olive.png" id="thumbnail-olive" />
+                                </li>
+                                <li style="border: none;">
+                                    <input type="image" style="width: 40px; border-radius: 50%;" src="img/navy.png" id="thumbnail-navy" />
+                                </li>
+
+                            </ul>-->
+
+                           
+                            <!-- Design Front Section -->
+                            <h5><i class="icon-tags"></i> Front Design</h5>
+                            <ul class='designs unstyled clearfix'>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/t-shirts/arkansas.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/t-shirts/arizona.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/t-shirts/alabama.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <img src="img/t-shirts/arizonastate.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr>
+                                <!--<button class="btn btn-primary" style="height: 30px; display: block;" id="flip_content">Flip Woolly</button>-->
+                                <input type="image" style="bottom; width: 75px;" src="img/flip.png" id="flip_content" />
+
+
+                            <hr>
+                            <!-- Design Back Section -->
+                            <h5><i class="icon-tags"></i> Back Design</h5>
+                            <!--<ul class='backDesigns unstyled clearfix'>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/t-shirts/us.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/t-shirts/ca.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/t-shirts/mx.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <img src="img/t-shirts/jm.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>-->
+
+<hr>                        <!-- options -->
+                        <div class='backDesigns unstyled clearfix'>
+                            <label for="designtext"><i class=" icon-edit"></i> Enter Class year</label>
+                            <!-- Texts on T-shirt -->
+                            <div id="texts" class='clearfix'>
+                                <!-- Text where tro put text -->
+                                <textarea type="text" id='designtext' name='designtext' placeholder='Text' class='span12'></textarea>
+
+                            </div><!-- /.text -->
+</div>
+                        </div> <!-- widget-content -->
+
+                    </div> <!-- widget -->
+                </div> <!-- span3 -->
+
+<div id='product-component-7ff8889e956'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'glass-u.myshopify.com',
+      apiKey: '78b973b4086c9d8d154354399841467b',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [7878271176],
+        node: document.getElementById('product-component-7ff8889e956'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "buttonDestination": "checkout",
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "title": false,
+      "variantTitle": false,
+      "price": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "text": {
+      "button": "BUY NOW"
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#23c4f1",
+        ":hover": {
+          "background-color": "#20b0d9"
+        },
+        "border-radius": "20px",
+        ":focus": {
+          "background-color": "#20b0d9"
+        }
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#23c4f1",
+        ":hover": {
+          "background-color": "#20b0d9"
+        },
+        "border-radius": "20px",
+        ":focus": {
+          "background-color": "#20b0d9"
+        }
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#23c4f1",
+        ":hover": {
+          "background-color": "#20b0d9"
+        },
+        "border-radius": "20px",
+        ":focus": {
+          "background-color": "#20b0d9"
+        }
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#23c4f1",
+        ":hover": {
+          "background-color": "#20b0d9"
+        },
+        ":focus": {
+          "background-color": "#20b0d9"
+        }
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+            </div><!-- /.row-fluid -->
+            <!-- Footer -->
+            <div id="footer">
+                <!--<p class='label label-info pull-right'>NEU T-shirts</p>-->
+
+            </div> <!-- footer -->
+        </div> <!-- container -->
+
+
+        <!-- Popup Preview -->
+
+        <!-- Modal - bootstrap component-->
+            <div id="myModal" class="modal hide fade">
+              <div class="modal-body">
+                    <!-- here commes design preview -->
+              </div><!-- modal body -->
+              <div class="modal-footer">
+                <!-- button to close modal preview -->
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+              </div>
+            </div>
+
+
+            <!-- generate canvas here and we hide it to generate image using Canvas2image Script -->
+            <div id="convascontent" style='display:none'></div>
+
+
+
+        <!-- javascript
+        ================================================== -->
+        <!-- Placed at the endif of the document so the pages load faster -->
+        <script type="text/javascript"  src="js/jquery.js"></script>
+        <!-- bootstrap -->
+        <script type="text/javascript"  src="js/bootstrap.js"></script>
+        <!-- Jquery UI -->
+        <script type="text/javascript"  src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <!-- Color picker Scripts -->
+        <script type="text/javascript"  src="js/pick-a-color-1.1.7.min.js"></script>
+        <script type="text/javascript"  src="js/tinycolor-0.9.15.min.js"></script>
+        <!-- Print Script -->
+        <script type="text/javascript"  src="js/jquery.print-preview.js"></script>
+        <!-- Html2canvas script -->
+        <script type="text/javascript"  src="js/html2canvas.js"></script>
+        <!-- Convas To image script-->
+        <script type="text/javascript"  src="js/Canvas2Image.js"></script>
+        <script type="text/javascript"  src="js/base64.js"></script>
+
+
+        <!-- Default Script call -->
+        <script type="text/javascript" src="js/app.js"></script>
+
+    </body>
+</html>
